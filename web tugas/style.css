@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #2980b9;
+    padding: 20px;
+    text-align: left;
+    color: white;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 25px;
+  }
+  
+  img {
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 100%;
+  }
+
+  .desk {
+      margin-left: 2%;
+      text-align: center;
+  }
+
+  hr {
+      width: 50%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+
+  .footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+  }
+ }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
